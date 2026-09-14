@@ -1,29 +1,47 @@
+@font-face {
+    font-family: Kleptium;
+    src: url(fonts/Kleptium.ttf);
+}
+
 body {
     /* background-image: linear-gradient(90deg, rgba(7, 1, 13, 1) 0%, rgba(37, 31, 43, 1) 100%); */
     background-color: #0c0612;
     color: white;
+    font-family: "Kleptium", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    /* line-height: 2px; */
 }
 
-/* p {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+p {
+    margin: 0;
 }
-
-h1 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h3 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} */
 
 a:visited {
     color: white;
 }
 
+.all-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 .about-content {
+    outline: 0.1rem solid rgb(255, 255, 255);
+}
+
+.stack {
+    padding: 0.5rem;
+    outline: 0.1rem solid rgb(255, 255, 255);
+}
+
+.substack {
     display: flex;
-    justify-content: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+    
+    align-items: center;
 }
 
 .project-container {
@@ -31,35 +49,15 @@ a:visited {
     grid-template-columns: 1fr 1fr;
 }
 
-.skills-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.skill-box {
-    display: flex;
-    justify-content: space-evenly;
+.skill {
     align-items: center;
-    flex-direction: column;
-    outline: 0.25rem solid rgb(255, 143, 241);
+    outline: 0.1rem solid rgb(255, 143, 241);
     border-radius: 10px;
-    margin: 1rem
+    margin: 0.25rem;
+    padding: 0.25rem;
+    padding-bottom: 0rem;
+    font-size: 24px;
 }
-
-.skill-image {
-    width: 4rem;
-    height: 4rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-/* .container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    height: 6rem;
-} */
 
 /* for centering a group of regular containers */
 .centering-container {
