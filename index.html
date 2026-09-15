@@ -17,18 +17,28 @@
             </a>
         </div> 
 
+        <!-- <svg width="200" height="173.2" class = "triangle-small">
+            <polygon points="100,0 0,173.2 200,173.2" stroke="#2f1847" stroke-width = "20" fill-opacity = "0"/>
+        </svg>
+        <svg width="400" height="346.4" class = "triangle-med">
+            <polygon points="200,0 0,346.4 400,346.4" stroke="#2f1847" stroke-width = "20" fill-opacity = "0" />
+        </svg> -->
+        <div class = "triangle triangle-medium">
+            <div class = "triangle triangle-small"></div>
+        </div>
+
         <div class = "all-container">
             <div class = "about-content">
-                <p style = "margin: 1rem">
-                    I'm not going to be revealing a crazy amount of information on here because this account is used for both personal and professional purposes<br>
-                    This website exists as a portfolio that I rarely update because I think web dev is terrible.<br><br>
-                    Font is Kleptium by me<br><br>
-                    WIP
+                <p>
+                    I'm not going to be revealing a crazy amount of information on here because this account is used for both personal and professional purposes<br><br>
+                    I primarily work in Python for scripts to make my life easier, but will move over to C++ for projects that require more complex frameworks like OpenGL.<br><br>
+                    Currently, I am making an attempt to learn Lean because I feel like a functional language is something missing from my stack.<br><br>
+                    Font is Kleptium by me
                 </p>
             </div>
     
-            <div class = "stack">
-                <p>Languages</p>
+            <div class = "stack" style = "grid-row: span 2">
+                <p class = "inverse-header">Languages</p>
                 <div class = "substack">
                     <span class = "skill">Python</span>
                     <span class = "skill">C++</span>
@@ -36,17 +46,35 @@
                     <span class = "skill">HTML</span>
                     <span class = "skill">CSS</span>
                     <span class = "skill">AVR Assembly</span>
-                </div>     
-                <br><p>Backend</p>
+                </div>  
+                <br><p class = "inverse-header">Misc</p>
+                <div class = "substack">
+                    <span class = "skill">OpenGL</span>
+                </div>
+                <br><p class = "inverse-header">Backend</p>
                 <div class = "substack">
                     <span class = "skill">Flask</span>
                     <span class = "skill">SQLite</span>
                 </div>
-                <br><p>Design</p>
+                <br><p class = "inverse-header">Design</p>
                 <div class = "substack">
                     <span class = "skill">Photoshop</span>
                     <span class = "skill">DaVinci Resolve</span>
                 </div>
+            </div>
+
+            <div class = "about-content">
+                <p>
+                    Current project: <b>Euhniverce</b>
+                    <span class = "skill">OpenGL</span>
+                    <span class = "skill">C++</span>
+                </p>
+                <br>
+                <p>
+                    Euhniverce is my custom voxel engine that I am actively developing. Its primary purpose is to develop a game of the same name inspired by Minecraft and Fractal Block World.
+                    At the time of writing, it supports terrain generation and block placement/removal. I am currently working on optimizing the engine to allow for solid shells of blocks to exist
+                    without causing extreme lag.
+                </p>
             </div>
         </div>
     </body>
