@@ -3,12 +3,19 @@
     src: url(fonts/Kleptium.ttf);
 }
 
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     /* background-image: linear-gradient(90deg, rgba(7, 1, 13, 1) 0%, rgba(37, 31, 43, 1) 100%); */
     background-color: #0c0612;
     color: white;
     font-family: "Kleptium", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 32px;
+    height: 100%;
+    overflow: hidden;
     /* line-height: 2px; */
 }
 
@@ -32,11 +39,13 @@ a:visited {
 .about-content {
     outline: 0.1rem solid rgb(144, 144, 144);
     padding: 1rem;
+    backdrop-filter: blur(10px);
 }
 
 .stack {
     padding: 0.5rem;
     outline: 0.1rem solid rgb(144, 144, 144);
+    backdrop-filter: blur(10px);
 }
 
 .substack {
@@ -69,15 +78,33 @@ a:visited {
     min-height: 6rem
 }
 
-.triangle {
+.triangles {
     position: absolute;
-    top: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    outline: 0.1rem solid rgb(99, 32, 170);
-    
+    top: 5%;
+    left: -20%;
+    z-index: -1;
+    filter: brightness(50%) sepia(100%) saturate(999999%) hue-rotate(-80deg);
+}
+
+.circle {
+    outline: 1rem solid rgba(116, 23, 216, 0.3);
+    border-radius: 100%;
+    z-index: -2;
+}
+
+.ternary-one {
+    background-color: #ff8ff1;
+}
+.ternary-two {
+    background-color: #6912c6;
+}
+
+.ternary-text {
+    font-size: 800px;
+    color: rgba(255, 255, 255, 0);
+    z-index: -3;
+    -webkit-text-stroke: 2px rgb(116, 23, 216);
+    text-align: right;
 }
 
 .triangle-small {
